@@ -8,7 +8,6 @@ from sklearn.feature_selection import SelectPercentile, f_classif
 
 class preprocess:
 
-
     def vectorize(words_file = "songs_pickle.pkl", authors_file="rapper_pickle.pkl"):
 
         authors_file_handler = open(authors_file, "rb")
@@ -32,4 +31,4 @@ class preprocess:
         features_train_transformed = selector.transform(features_train_transformed).toarray()
         features_test_transformed  = selector.transform(features_test_transformed).toarray()
 
-        return features_train_transformed, features_test_transformed, labels_train, labels_test
+        return features_train_transformed, features_test_transformed, labels_train, labels_test, vectorizer, selector
