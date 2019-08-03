@@ -11,6 +11,7 @@ def predict(lyrics_input):
     lyrics_input = stripString(lyrics_input)
     lyrics_input = [lyrics_input]
 
+
     features_input = vectorizer.transform(lyrics_input)
     features_input  = selector.transform(features_input).toarray()
 
