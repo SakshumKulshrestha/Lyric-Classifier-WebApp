@@ -27,5 +27,19 @@ def stripString(str1):
         return (str1.lower()).rstrip("\n")
 
 
-s1 = "She's takin a little nap in the trunk Oh that smell (whew!) da-da musta runned over a skunkNow I know what you're thinkin - it's kind of late to go swimminBut you know your mama, she's one of those type of womenthat do crazy things, and if she don't get her way, she'll throw a fitDon't play with da-da's toy knife, honey, let go of it (no!)And don't look so upset, why you actin bashful?"
+s1 = """Staying in big six-six with woes
+Man start dissin' and doin' reposts
+They do anything except road
+Still can't see them after it snows
+I don't have time for the wasteman jokes
+Personal ting if I'm gettin' up close
+Loyal to O 'cause I've taken a oath
+Versace hotel and I'm takin' the robes
+Seen 'em in person, I'm seein' a ghost
+They told me relax 'cause they're takin' control
+Take all that shit up with P and his bro
+I wish you the best, let me know how it goes
+Wanna be free and I wanna let go
+We came around and you showed us the most"""
+
 predict(s1)
