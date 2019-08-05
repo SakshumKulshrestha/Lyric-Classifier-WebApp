@@ -20,12 +20,19 @@ class predictor:
         results_list = classifier.predict(features_input)
         result_digit = results_list[0]
 
+        result_probability = classifier.predict_proba(features_input)
+        result_probability = float(str(result_probability[0][0])[:5])*10
+        if result_probability == 10.0:
+            result_probability = 100.0
+
+
+
         if result_digit == '0':
-            return "Eminem"
+            return "Eminem", result_probability
         elif result_digit == '1':
-            return "Drake"
+            return "Drake", result_probability
         else:
-            return "Inconclusive"
+            return "Inconclusive", result_probability
 
 
     def stripString(str1):

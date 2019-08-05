@@ -8,8 +8,8 @@ def index():
     if request.method=='POST':
         lyrics = request.form['song_text']
         lyrics = str(lyrics)
-        result_string = pred.predict(lyrics)
-        return render_template('show_results.html', result_string=result_string)
+        result_string, results_probability = pred.predict(lyrics)
+        return render_template('show_results.html', result_string=result_string, result_probability=results_probability)
     
     else:
         return render_template('index.html')
