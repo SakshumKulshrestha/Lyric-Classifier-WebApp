@@ -176,25 +176,11 @@ iframe {
 
 .wrap-input100 {
   width: 100%;
-  background-color: #fff;
+  background-color: #ffff;
   border-radius: 31px;
   margin-bottom: 16px;
   position: relative;
   z-index: 1;
-}
-
-.result {
-
-  position: relative;
-  display: block;
-  width: 100%;
-  background: #fff;
-  border-radius: 31px;
-  font-family: Ubuntu-Bold;
-  font-size: 18px;
-  color: #8f8fa1;
-  line-height: 1.2;
-
 }
 
 .input100 {
