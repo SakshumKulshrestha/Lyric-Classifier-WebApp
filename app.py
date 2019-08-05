@@ -1,11 +1,14 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from predictor import predict
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('index.html')
+    if request.method=='POST':
+        return render_template('show_results')
+    else:
+        return render_template('index.html')
 
 @app.route('/results')
 def display():
